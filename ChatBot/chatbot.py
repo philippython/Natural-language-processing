@@ -18,3 +18,9 @@ conversation = [
 
 list_trainer = ListTrainers(Vennote_Bot)
 list_trainer.train(conversation)
+
+# Training with English Corpus Data 
+trainer_corpus = ChatterBotCorpusTrainer(Vennote_Bot)
+trainer_corpus.train(
+    'chatterbot.corpus.english'
+) 
