@@ -1,9 +1,8 @@
 from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainers, ChatterBotCorpusTrainer
+from chatterbot.trainers import ListTrainer, ChatterBotCorpusTrainer
 
 # creating chatbot instance
 Vennote_Bot = ChatBot("VennoteBot", )
-
 
 # Training with Personal Ques & Ans 
 conversation = [
@@ -16,7 +15,7 @@ conversation = [
     "You're welcome."
 ]
 
-list_trainer = ListTrainers(Vennote_Bot)
+list_trainer = ListTrainer(Vennote_Bot)
 list_trainer.train(conversation)
 
 # Training with English Corpus Data 
