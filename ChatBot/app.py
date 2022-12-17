@@ -1,5 +1,5 @@
 from flask import Flask , request , render_template
-from .chatbot import Vennote_Bot
+from chatbot import Vennote_Bot
 
 app = Flask(__name__)
 
